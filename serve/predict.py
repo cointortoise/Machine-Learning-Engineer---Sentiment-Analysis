@@ -88,5 +88,8 @@ def predict_fn(input_data, model):
     with torch.no_grad():
         output = model(data)
     result = np.round(output.numpy())
-
+    #This chunk of code was taken from "https://github.com/hjlopes/sagemaker-sentiment-analysis/blob/master/SageMaker%20Project.ipynb"
+    #This portion was not reviewed in the course and thus i relied upon outside sources to figure it out
+    
+    
     return result
